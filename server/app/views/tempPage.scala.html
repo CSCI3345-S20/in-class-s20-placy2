@@ -1,0 +1,15 @@
+@(years: List[Int])
+
+@main("Weather Data Page") {
+  <p>Temps go here</p>
+  <table border="2">
+    <thead>
+      <tr><d>Year</d></tr>
+    </thead>
+    <tbody>
+      @for(year <- years){
+        <tr><td>@year</td></tr>
+      }
+    </tbody>
+  </table>
+}
