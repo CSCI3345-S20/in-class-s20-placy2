@@ -16,7 +16,8 @@ class Application @Inject()(cc: ControllerComponents) extends AbstractController
     Ok(views.html.tempPage((1946 to 2014).toList))
   }
 
-  def temps(month: Int, year: Int) = {
-    TODO
+  def temps(month: Int, year: Int) = Action {
+    Ok(views.html.tempMonth(month, year, models.TempModel.data.
+      filter(td => td.year == year && td.month == month)))
   }
 }
