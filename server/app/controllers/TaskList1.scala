@@ -94,6 +94,6 @@ class TaskList1 @Inject()(cc: MessagesControllerComponents) extends MessagesAbst
         TaskListInMemoryModel.removeTask(username, index)
         Redirect(routes.TaskList1.taskList())
       }.getOrElse(Redirect(routes.TaskList1.taskList()))
-    }getOrElse(Redirect(routes.TaskList1.login()))
+    }.getOrElse(Redirect(routes.TaskList1.login()))
   }
 }
