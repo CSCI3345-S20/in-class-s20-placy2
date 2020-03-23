@@ -24,4 +24,12 @@ class Application @Inject()(cc: ControllerComponents) extends AbstractController
     Ok(views.html.tempMonth(month, year, models.TempModel.data.
       filter(td => td.year == year && td.month == month)))
   }
+
+  def randomNumber = Action { implicit request =>
+    Ok(util.Random.nextInt(100).toString())
+  }
+
+  def randomString(length: Int) = Action {
+    Ok(util.Random.nextString(length))
+  }
 }

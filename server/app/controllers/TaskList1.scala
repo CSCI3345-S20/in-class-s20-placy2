@@ -13,7 +13,7 @@ case class LoginData(username: String, password: String)
 class TaskList1 @Inject()(cc: MessagesControllerComponents) extends MessagesAbstractController(cc) {
   val loginForm = Form(mapping(
     "Username" -> text(3, 10),
-    "Password" -> text(8)
+    "Password" -> text(4, 15)
   )(LoginData.apply)(LoginData.unapply))
 
 

@@ -2,7 +2,7 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-# Videos
+# Video set 1
 GET        /taskList1                    controllers.TaskList1.taskList
 GET        /login1                       controllers.TaskList1.login
 GET        /validateGet1                 controllers.TaskList1.validateLoginGet(username, password)
@@ -15,6 +15,19 @@ POST       /removeTask1                  controllers.TaskList1.removeTask
 
 GET        /productArgs                  controllers.Application.product(prodType, prodNum: Int)
 GET        /product/:prodType/:prodNum   controllers.Application.product(prodType, prodNum: Int)
+
+# Video set 2
+GET        /random                       controllers.Application.randomNumber
+GET        /randomString/:length         controllers.Application.randomString(length: Int)
+GET        /TaskList2                    controllers.TaskList2.taskList
+GET        /load2                        controllers.TaskList2.load
+GET        /login2                       controllers.TaskList2.login
+POST       /validate2                    controllers.TaskList2.validate
+POST       /create2                      controllers.TaskList2.createUser
+GET        /deleteTask2                  controllers.TaskList2.delete(index: Int)
+GET        /addTask2                     controllers.TaskList2.addTask(task)
+GET        /logout2                      controllers.TaskList2.logout
+GET        /generatedJS                  controllers.TaskList2.generatedJS
 
 # Home page
 GET        /                             controllers.Application.index

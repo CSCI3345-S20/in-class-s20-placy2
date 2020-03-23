@@ -9,17 +9,17 @@
     <br>
     Password: <input type="password" name="password">
     <br>
-    <input type="submit">
+    <button type="submit">Login</button>
   </form>
 
   <form method="post" action="@routes.TaskList1.validateLoginPost()">
     @helper.CSRF.formField
     <h3>POST method (better)</h3>
-    Username: <input type="text" name="username">
+    Username: <input type="text" name="username" id="username-login">
     <br>
-    Password: <input type="password" name="password">
+    Password: <input type="password" name="password" id="password-login">
     <br>
-    <input type="submit">
+    <button type="submit">Login</button>
   </form>
 
   @helper.form(action = routes.TaskList1.validateLoginForm()) {
@@ -35,10 +35,10 @@
   <form method="post" action="@routes.TaskList1.createUser()">
     @helper.CSRF.formField
     <h3>Create new User</h3>
-    Username: <input type="text" name="username">
+    Username: <input type="text" name="username" id="username-create">
     <br>
-    Password: <input type="password" name="password">
+    Password: <input type="password" name="password" id="password-create">
     <br>
-    <input type="submit">
+    <button type="submit">Create User</button>
   </form>
 }
