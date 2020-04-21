@@ -2,14 +2,13 @@ package controllers
 
 import javax.inject._
 
-import edu.trinity.videoquizreact.shared.SharedMessages
 import play.api.mvc._
 
 @Singleton
 class Application @Inject()(cc: ControllerComponents) extends AbstractController(cc) {
 
   def index = Action { implicit request =>
-    Ok(views.html.index(SharedMessages.itWorks))
+    Ok(views.html.index("The index page."))
   }
 
   def product(prodType: String, prodNum: Int) = Action {

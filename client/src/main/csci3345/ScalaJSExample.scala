@@ -1,6 +1,6 @@
-package edu.trinity.videoquizreact
+package csci3345
 
-import edu.trinity.videoquizreact.shared.SharedMessages
+import shared.src.shared.SharedMessages
 import org.scalajs.dom
 
 import slinky.core._

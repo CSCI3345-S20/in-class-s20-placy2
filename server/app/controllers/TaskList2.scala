@@ -1,7 +1,7 @@
 package controllers
 
 import javax.inject._
-
+import play.api.i18n._
 import play.api.mvc._
 import models.TaskListInMemoryModel
 

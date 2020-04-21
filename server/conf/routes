@@ -29,6 +29,19 @@ GET        /addTask2                     controllers.TaskList2.addTask(task)
 GET        /logout2                      controllers.TaskList2.logout
 GET        /generatedJS                  controllers.TaskList2.generatedJS
 
+# Video set 3
+GET        /load3                        controllers.TaskList3.load
+POST       /validate3                    controllers.TaskList3.validate
+POST       /create3                      controllers.TaskList3.createUser
+GET        /taskList3                    controllers.TaskList3.taskList
+POST       /addTask3                     controllers.TaskList3.addTask
+POST       /deleteTask3                  controllers.TaskList3.removeTask
+GET        /logout3                      controllers.TaskList3.logout
+
+# WebSocket Chat
+GET        /chat                         controllers.WebSocketChat.index
+GET        /chatSocket                   controllers.WebSocketChat.socket
+
 # Home page
 GET        /                             controllers.Application.index
 
