@@ -42,6 +42,18 @@ GET        /logout3                      controllers.TaskList3.logout
 GET        /chat                         controllers.WebSocketChat.index
 GET        /chatSocket                   controllers.WebSocketChat.socket
 
+# Video set 4
+GET        /load4                        controllers.TaskList4.load
+
+# Video set 5
+GET        /load5                        controllers.TaskList5.load
+POST       /validate5                    controllers.TaskList5.validate
+POST       /create5                      controllers.TaskList5.createUser
+GET        /taskList5                    controllers.TaskList5.taskList
+POST       /addTask5                     controllers.TaskList5.addTask
+POST       /deleteTask5                  controllers.TaskList5.removeTask
+GET        /logout5                      controllers.TaskList5.logout
+
 # Home page
 GET        /                             controllers.Application.index
 
