@@ -54,6 +54,12 @@ POST       /addTask5                     controllers.TaskList5.addTask
 POST       /deleteTask5                  controllers.TaskList5.removeTask
 GET        /logout5                      controllers.TaskList5.logout
 
+# Video set 6
+GET        /load6                        controllers.TaskList6.load
+
+#Video set 7
+GET        /load7                        controllers.TaskList7.load
+
 # Home page
 GET        /                             controllers.Application.index
 

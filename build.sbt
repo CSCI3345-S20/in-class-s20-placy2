@@ -25,6 +25,7 @@ lazy val server = (project in file("server")).settings(commonSettings).settings(
 
 lazy val client = (project in file("client")).settings(commonSettings).settings(
   name := "In-Class-Client",
+  addCompilerPlugin("org.scalamacros" % "paradise" % "2.1.1" cross CrossVersion.full),
   scalaJSUseMainModuleInitializer := true,
   libraryDependencies ++= Seq(
     "org.scala-js" %%% "scalajs-dom" % "0.9.5",
