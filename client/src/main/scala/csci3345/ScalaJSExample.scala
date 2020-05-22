@@ -2,10 +2,13 @@ package csci3345
 
 import shared.SharedMessages
 import org.scalajs.dom
+import org.scalajs.dom.document
 
 import slinky.core._
 import slinky.web.ReactDOM
 import slinky.web.html._
+import org.scalajs.dom.raw.MouseEvent
+import org.scalajs.dom.raw.KeyboardEvent
 
 object ScalaJSExample {
 
@@ -26,4 +29,5 @@ object ScalaJSExample {
       )
     }
   }
+
 }
